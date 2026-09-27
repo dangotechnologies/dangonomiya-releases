@@ -196,7 +196,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
       <h1 class="pixel">Your account, <span>scanned</span> and in check.</h1>
       <p class="lead">Dangonomiya reads your characters, weapons and inventory straight from the game screen, keeps your wish history with pity and 50/50, and lets a Discord bot remind you of dailies, resin and everything else.</p>
       <div class="cta">
-        <a class="btn download-link" href="https://github.com/dangos-dev/dangonomiya-releases/releases/latest">
+        <a class="btn download-link" href="https://github.com/dangotechnologies/dangonomiya-releases/releases/latest">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg>
           Download for Windows
         </a>
@@ -292,7 +292,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
       <img src="assets/logo.png" alt="">
       <h2 class="pixel">Get Dangonomiya</h2>
       <p class="version-text">Windows 10 and 11, 64-bit</p>
-      <a class="btn download-link" href="https://github.com/dangos-dev/dangonomiya-releases/releases/latest">
+      <a class="btn download-link" href="https://github.com/dangotechnologies/dangonomiya-releases/releases/latest">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg>
         Download for Windows
       </a>
@@ -310,7 +310,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 <script>
 // Point the download buttons at the latest installer, and say which version it is. Without an
 // answer (offline, or no release yet) they keep linking to the releases page.
-fetch('https://api.github.com/repos/dangos-dev/dangonomiya-releases/releases/latest')
+fetch('https://api.github.com/repos/dangotechnologies/dangonomiya-releases/releases/latest')
   .then((res) => (res.ok ? res.json() : null))
   .then((release) => {
     if (!release) return
